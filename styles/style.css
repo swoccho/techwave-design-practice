@@ -212,9 +212,7 @@ hr{
     padding-right: 40px;
     padding-bottom: 6.68rem;
 }
-.audio p{
-    /*width: 100%;*/
-}
+
 
 
 .mobile{
@@ -410,5 +408,110 @@ footer .logo img{
     margin: 0 auto;
     padding-top: 32px;
     padding-bottom: 32px;
+
+}
+
+
+@media screen and (max-width: 576px){
+    .banner{
+        background-position: center;
+    }
+
+    header nav ul, header nav button {
+        display: none;
+
+    }
+    .hamburger{
+        display: block;
+    }
+    header nav{
+        justify-content: space-between;
+    }
+
+    .banner-title{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .rating{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+        gap: 40px;
+
+    }
+    .boxs{
+
+        grid-template-areas:
+
+    "audio "
+    "mobile"
+    "global"
+        "interviews"
+        "rich"
+    ;
+        padding:20px
+    }
+    .audio{
+        width: 100%;
+        max-width: none;
+        padding:24px
+
+    }
+
+    .cards{
+        grid-template-columns: 1fr;
+        padding: 20px;
+        padding-bottom: 60px;
+    }
+
+    .host-content{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #alex{
+        height: 150px;
+        width: 150px;
+
+        margin: 0 auto;
+    }
+
+    .icons{
+
+        justify-content: center;
+    }
+
+    footer{
+       background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+
+    footer .logo img{
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .footer-content{
+        padding: 40px 20px;
+    }
+
+    .socials{
+        grid-template-columns: repeat(2, auto);
+        max-width: 300px;
+        justify-content: center;
+        gap: 20px;
+        margin: 0 auto;
+
+    }
+
+
+
+
+
+
+
 
 }
