@@ -23,13 +23,16 @@ header nav{
     align-items: center;
     padding: 30px;
 }
+.hamburger{
+    display: none;
+}
 header nav ul{
     display: flex;
     list-style: none;
     gap:32px;
 
 }
-header nav ul li a{
+header nav ul li a,a{
     text-decoration: none;
     color: white;
     font-size: 1rem;
@@ -101,6 +104,9 @@ header nav ul li a{
 
 }
 
+.about-description h1{
+    padding-bottom: 16px;
+}
 #subscribe-btn{
     color: #00FF88;
     background: transparent;
@@ -157,10 +163,13 @@ hr{
     color: #00FF88;
     font-size: 3rem;
     font-weight: 800;
+    text-align: center;
 
 }
 .rating p{
     color:  white;
+    padding-top: 16px;
+    text-align: center;
 }
 
 .rating{
@@ -338,6 +347,10 @@ hr{
 
 }
 
+.host-content p{
+    line-height: 2;
+}
+
 .icon{
     border: 2px solid #412567;
     border-radius: 100%;
@@ -358,4 +371,44 @@ hr{
     font-size: 2rem;
     font-weight: 700;
     padding-bottom: 1rem;
+}
+
+
+footer{
+    background-image: url("../assets/footer-bg.png");
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer .logo{
+
+    margin: 0 auto;
+    text-align: center;
+
+}
+footer .logo img{
+    width: 480px;
+    height: 60px;
+}
+
+.footer-content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px;
+}
+.copyright{
+    text-align: center;
+}
+
+.socials{
+    display: grid;
+    grid-template-columns:repeat(4, auto) ;
+    max-width: 600px;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }
